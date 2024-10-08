@@ -1,0 +1,190 @@
+/* Define as propriedades do corpo da página */
+body {
+    background-color: #181928; /* Cor de fundo do corpo */
+    color: #6272a4; /* Cor do texto */
+    margin: 0; /* Remove margens padrão */
+    font-family: Arial, sans-serif; /* Define a fonte */
+}
+
+/* Estiliza o cabeçalho */
+header {
+    display: flex; /* Usa flexbox para layout */
+    justify-content: justify; /* Corrigido de 'justify' para 'center' - deve ser 'center' */
+    padding: 5px; /* Espaçamento interno */
+    align-items: center; /* Centraliza verticalmente os itens */
+}
+
+/* Estiliza imagens */
+img {
+    width: 200px; /* Largura da imagem */
+    height: auto; /* Altura automática para manter proporções */
+    justify-content: justify; /* Corrigido de 'justify' para 'center' - deve ser removido */
+}
+
+/* Contêiner principal do dashboard */
+#dashboard-container {
+    padding: 0%; /* Remove o padding */
+}
+
+/* Estiliza o contêiner do gráfico */
+#chart-container {
+    width: 98%; /* Largura do contêiner do gráfico */
+    height: 300px; /* Altura do gráfico */
+    margin: 0 auto; /* Centraliza o contêiner */
+    font-size: 24px; /* Tamanho da fonte */
+}
+
+/* Estiliza botões */
+.button {
+    padding: 10px; /* Espaçamento interno do botão */
+    background: grey; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    font-size: 12px; /* Tamanho da fonte */
+    border: none; /* Remove a borda padrão */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    margin-bottom: 20px; /* Espaçamento inferior */
+}
+
+/* Estiliza o seletor de robôs */
+#robo-selector {
+    display: none; /* Oculta o seletor inicialmente */
+    position: absolute; /* Posiciona de forma absoluta */
+    background: rgba(0, 0, 0, 0.7); /* Fundo semi-transparente */
+    color: white; /* Cor do texto */
+    padding: 10px; /* Espaçamento interno */
+    border: 1px solid #444; /* Borda */
+    z-index: 10; /* Coloca em cima de outros elementos */
+    top: 63%; /* Distância do topo */
+    left: 13%; /* Distância da esquerda */
+    transform: translateX(-50%); /* Centraliza horizontalmente */
+    width: 200px; /* Largura do seletor */
+    height: auto; /* Altura automática */
+}
+
+/* Estiliza a lista de robôs */
+#robos {
+    font-size: 12px; /* Tamanho da fonte */
+    width: 100%; /* Largura total */
+    background-color: white; /* Cor de fundo */
+    color: black; /* Cor do texto */
+    border: 1px solid #444; /* Borda */
+}
+
+/* Estiliza os rótulos */
+label {
+    font-size: 12px; /* Tamanho da fonte */
+}
+
+/* Estiliza elementos canvas */
+canvas {
+    background-color: #13141f; /* Cor de fundo do canvas */
+    color: #6272a4; /* Cor do texto */
+    padding: 10px; /* Espaçamento interno */
+}
+
+/* Estiliza o contêiner de seções */
+#container-sections {
+    display: flex; /* Usa flexbox para layout */
+    flex-wrap: wrap; /* Permite quebra de linha */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: flex-start; /* Alinha itens no topo */
+    gap: 10px; /* Espaçamento entre itens */
+    margin: 20px; /* Margem externa */
+}
+
+/* Estiliza os contêineres individuais */
+.container {
+    display: flex; /* Usa flexbox para layout */
+    flex-direction: column; /* Direção vertical */
+    justify-content: flex-start; /* Alinha itens ao topo */
+    align-items: center; /* Centraliza itens horizontalmente */
+    background-color: #13141f; /* Cor de fundo */
+    border: none; /* Remove a borda padrão */
+    width: calc(10% - 10px); /* Largura com cálculo para espaçamento */
+    min-width: 170px; /* Largura mínima */
+    height: auto; /* Altura automática */
+    padding: 10px; /* Espaçamento interno */
+    box-shadow: 3px 3px 10px rgba(24, 25, 40, 0.9); /* Sombra */
+    box-sizing: border-box; /* Inclui padding na largura total */
+    font-weight: bold; /* Texto em negrito */
+}
+
+/* Estiliza o título h3 dentro dos contêineres */
+.container h3 {
+    text-align: center; /* Centraliza o texto */
+    color: #6272a4; /* Cor do texto */
+    font-size: 12px; /* Tamanho da fonte */
+    font-weight: bold; /* Texto em negrito */
+    margin: 0; /* Remove margens */
+    order: 1; /* Define a ordem de empilhamento */
+    padding: 5px 0 20px 0; /* Espaçamento interno */
+}
+
+/* Estiliza o subtítulo h4 dentro dos contêineres */
+.container h4 {
+    text-align: center; /* Centraliza o texto */
+    color: #6272a4; /* Cor do texto */
+    font-size: 20px; /* Tamanho da fonte */
+    margin: 5px 0 0; /* Margens superior e inferior */
+    order: 3; /* Define a ordem de empilhamento */
+    padding: 10px 0 0 0; /* Espaçamento superior */
+}
+
+/* Estiliza os cards */
+.card {
+    border-radius: 50%; /* Bordas arredondadas */
+    width: 90px; /* Largura do card */
+    height: 90px; /* Altura do card */
+    display: flex; /* Usa flexbox para layout */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    font-size: 25px; /* Tamanho da fonte */
+    color: black; /* Cor do texto */
+    order: 2; /* Define a ordem de empilhamento */
+    font-weight: bold; /* Texto em negrito */
+}
+
+/* Estiliza o scroller */
+#scroller {
+    max-width: 70%; /* Limita a largura máxima do scroller */
+    background-color: #181928; /* Cor de fundo */
+    color: #6272a4; /* Cor do texto */
+    overflow: hidden; /* Esconde overflow */
+    white-space: nowrap; /* Impede quebra de linha */
+    margin: 0 50px; /* Margem lateral de 50px */
+    justify-content: center; /* Centraliza o conteúdo do scroller */
+    display: flex; /* Permite que os itens sejam exibidos em linha */
+    align-items: center; /* Centraliza verticalmente os itens do scroller */
+    font-weight: bold; /* Texto em negrito */
+}
+
+/* Estiliza o conteúdo do scroller */
+#scroller-content {
+    display: flex; /* Permite que os itens sejam exibidos em linha */
+    white-space: nowrap; /* Impede quebra de linha */
+    align-items: center; /* Centraliza verticalmente os itens */
+    font-weight: bold; /* Texto em negrito */
+}
+
+/* Estiliza os itens dentro do scroller */
+#scroller-content div {
+    display: inline-block; /* Itens exibidos lado a lado */
+    margin: 0 20px; /* Espaçamento lateral entre os itens */
+    padding: 5px 10px; /* Aumenta a área clicável */
+    transition: background-color 0.1s; /* Efeito suave ao passar o mouse */
+    font-weight: bold; /* Texto em negrito */
+}
+
+/* Estiliza o cartão da última coleta */
+#ultima-coleta-card {
+    background-color: #181928; /* Cor de fundo do cartão */
+    color: #6272a4; /* Cor do texto */
+}
+
+/* Estiliza a última coleta */
+#ultima-coleta {
+    font-size: 24px; /* Tamanho do texto do horário */
+    font-weight: bold; /* Negrito */
+    background-color: #181928; /* Cor de fundo */
+    color: #6272a4; /* Cor do texto */
+}
