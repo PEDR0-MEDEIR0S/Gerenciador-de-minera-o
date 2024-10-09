@@ -1,4 +1,4 @@
-# Gerenciador-de-minera-o
+# Gerenciador-de-mineracao
 Resumo do Projeto
     Este projeto Django é um sistema de dashboard que exibe dados e gera gráficos baseados 
     em dados provenientes da mineração. O objetivo é fornecer uma interface simples e eficiente 
